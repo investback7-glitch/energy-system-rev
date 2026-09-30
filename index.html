@@ -42,62 +42,20 @@
       line-height: 1.7;
     }
 
-    /* Layout com Sidebar para Desktop */
-    .page-wrapper {
-      display: flex;
-      min-height: 100vh;
-    }
-
-    .sidebar {
-      width: 380px;
-      background: #111827;
-      border-right: 1px solid rgba(236, 72, 153, 0.15);
-      padding: 30px 20px;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .sidebar img {
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid rgba(236, 72, 153, 0.3);
-      box-shadow: 0 0 20px rgba(236, 72, 153, 0.12);
-      margin-bottom: 20px;
-    }
-
-    .sidebar-text {
-      font-size: 13px;
-      color: #94a3b8;
-      text-align: center;
-      line-height: 1.5;
-    }
-
-    .main-content {
-      flex: 1;
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
     .container {
-      width: 100%;
+      width: 92%;
+      max-width: 900px;
+      margin: auto;
     }
 
     header {
-      background: rgba(17, 24, 39, 0.7);
+      background: rgba(17, 24, 39, 0.75);
       backdrop-filter: blur(10px);
-      padding: 45px 30px;
+      padding: 50px 20px 40px;
       text-align: center;
-      border-radius: 16px;
-      border: 1px solid rgba(99, 102, 241, 0.2);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 0 0 16px 16px;
+      margin-bottom: 40px;
     }
 
     .label {
@@ -115,7 +73,7 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 38px;
       line-height: 1.2;
       margin: 0 auto 15px;
       color: #f8fafc;
@@ -123,20 +81,44 @@
     }
 
     .subtitle {
-      font-size: 17px;
-      max-width: 680px;
+      font-size: 18px;
+      max-width: 700px;
       margin: auto;
       color: #94a3b8;
+    }
+
+    main {
+      padding: 0 0 60px;
     }
 
     .card {
       background: rgba(17, 24, 39, 0.75);
       backdrop-filter: blur(10px);
-      padding: 32px;
+      padding: 35px;
       margin-bottom: 24px;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-card {
+      text-align: center;
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(10px);
+      padding: 35px 20px;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(236, 72, 153, 0.2);
+      box-shadow: 0 0 30px rgba(236, 72, 153, 0.08);
+    }
+
+    .image-card img {
+      width: 100%;
+      max-width: 750px;
+      border-radius: 12px;
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      box-shadow: 0 0 20px rgba(236, 72, 153, 0.15);
+      margin-top: 15px;
     }
 
     h2 {
@@ -263,25 +245,16 @@
       color: #64748b;
     }
 
-    /* Responsivo para Celulares e Tablets */
-    @media (max-width: 900px) {
-      .page-wrapper {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 25px 15px;
-      }
-      .sidebar img {
-        max-width: 320px;
-      }
+    @media (max-width: 650px) {
       h1 {
         font-size: 28px;
       }
-      .main-content {
-        padding: 20px 15px;
+      .card, .image-card {
+        padding: 24px 20px;
+      }
+      .button {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -289,208 +262,208 @@
 
 <body>
 
-<div class="page-wrapper">
-  
-  <!-- Sidebar com a Imagem em Destaque -->
-  <aside class="sidebar">
-    <!-- Cole o link direto da sua imagem no campo src abaixo -->
-    <img src="https://i.imgur.com/SEU_LINK_DA_IMAGEM.jpg" alt="Energy Revolution System Overview">
-    <div class="sidebar-text">
-      <p><strong>Energy Revolution System</strong></p>
-      <p>Visual overview of the core concepts, modular setup, and framework features.</p>
-    </div>
-  </aside>
-
-  <!-- Conteúdo Principal -->
-  <div class="main-content">
-    <div class="container">
-
-      <header>
-        <div class="label">Energy Revolution System Review</div>
-        <h1>
-          Energy Revolution System:
-          What You Should Know Before Trying It
-        </h1>
-        <p class="subtitle">
-          A straightforward overview of the program, its approach,
-          what you may find inside, and a few important things to consider.
-        </p>
-      </header>
-
-      <main>
-        <section class="card">
-          <h2>Why Are People Looking for Alternatives?</h2>
-          <p>
-            Rising household energy costs have encouraged many people to look
-            for practical ways to understand and manage their electricity usage.
-          </p>
-          <p>
-            Energy Revolution System is presented as a program designed to
-            introduce an alternative approach to thinking about household
-            energy consumption.
-          </p>
-          <div class="highlight">
-            <strong>Important:</strong>
-            The information on this page is intended to help you understand
-            the offer. Results, savings and experiences can vary from person
-            to person and depend on individual circumstances.
-          </div>
-        </section>
-
-        <section class="card">
-          <h2>What Is Energy Revolution System?</h2>
-          <p>
-            Energy Revolution System is an information-based program focused
-            on an alternative approach to household energy and electricity use.
-          </p>
-          <p>
-            Rather than simply presenting another generic list of ways to
-            reduce consumption, the program introduces its own methodology
-            and explains how the system is intended to be used.
-          </p>
-          <p>
-            The official presentation provides the complete explanation,
-            materials and instructions.
-          </p>
-        </section>
-
-        <section class="card">
-          <h2>What You Can Learn About</h2>
-          <p>
-            Depending on the version of the program currently offered,
-            the material may cover areas such as:
-          </p>
-          <div class="check">✓ Understanding household electricity usage</div>
-          <div class="check">✓ Alternative approaches to energy management</div>
-          <div class="check">✓ Practical concepts presented by the program</div>
-          <div class="check">✓ How the proposed system is intended to be implemented</div>
-          <div class="check">✓ Considerations for applying the method at home</div>
-
-          <div class="mid-cta">
-            <a
-              class="button"
-              href="https://743e9d5d-8pljv04pmqpdudv6r.hop.clickbank.net/"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-            >
-              Watch the Official Presentation Here
-            </a>
-          </div>
-
-          <p class="small" style="margin-top: 15px; text-align: center;">
-            Always review the current official presentation for the exact
-            contents, terms and availability.
-          </p>
-        </section>
-
-        <section class="card">
-          <h2>What Makes This Worth Looking At?</h2>
-          <p>
-            One reason people may investigate a program like this is the
-            possibility of learning a different way to approach household
-            energy consumption.
-          </p>
-          <p>
-            However, it is important to distinguish between learning a method
-            and receiving a guaranteed financial result.
-          </p>
-          <p>
-            There is no guarantee that every household will achieve the same
-            outcome.
-          </p>
-        </section>
-
-        <section class="card">
-          <h2>Things to Consider Before You Buy</h2>
-          <h3>1. Your results may vary</h3>
-          <p>
-            Individual circumstances, home characteristics, electricity usage
-            and other factors can influence the outcome.
-          </p>
-          <h3>2. Check the current offer</h3>
-          <p>
-            Pricing, bonuses, guarantees and program contents can change.
-            The official sales page should be considered the current source
-            for those details.
-          </p>
-          <h3>3. Understand what you are purchasing</h3>
-          <p>
-            Take some time to review the official presentation before making
-            a purchase so you understand what the program includes.
-          </p>
-        </section>
-
-        <section class="cta-box">
-          <h2>Want to See the Official Presentation?</h2>
-          <p>
-            If you want to learn more about Energy Revolution System,
-            you can view the official presentation and decide for yourself
-            whether the program is relevant to your situation.
-          </p>
-          <a
-            class="button"
-            href="https://743e9d5d-8pljv04pmqpdudv6r.hop.clickbank.net/"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-          >
-            View the Official Presentation
-          </a>
-          <p class="small">
-            This link may be an affiliate link. If you purchase through it,
-            we may receive a commission at no additional cost to you.
-          </p>
-        </section>
-
-        <section class="card">
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq">
-            <h3>Is Energy Revolution System guaranteed to save everyone money?</h3>
-            <p>No specific financial result should be assumed. Individual results can vary depending on circumstances and implementation.</p>
-          </div>
-          <div class="faq">
-            <h3>Where can I see the complete details?</h3>
-            <p>The official presentation contains the current information about the program, its contents and purchasing terms.</p>
-          </div>
-          <div class="faq">
-            <h3>Should I buy it immediately?</h3>
-            <p>You should first review the official presentation and decide whether the program is appropriate for your own circumstances.</p>
-          </div>
-        </section>
-
-        <section class="card">
-          <h2>Final Thoughts</h2>
-          <p>
-            Energy Revolution System presents an alternative approach to
-            household energy management. The main question is whether the
-            method and information provided are relevant to your particular
-            situation.
-          </p>
-          <p>
-            The best next step is to review the official presentation,
-            understand the offer and make your own informed decision.
-          </p>
-        </section>
-      </main>
-
-      <footer>
-        <p>
-          <strong>Affiliate Disclosure:</strong>
-          This website may contain affiliate links. We may receive a commission
-          if you purchase through a link on this page, at no additional cost to you.
-        </p>
-        <p>
-          This page is an informational pre-sell page and is not the official
-          website of Energy Revolution System.
-        </p>
-        <p>
-          © 2026. All rights reserved.
-        </p>
-      </footer>
-
-    </div>
+<header>
+  <div class="container">
+    <div class="label">Energy Revolution System Review</div>
+    <h1>
+      Energy Revolution System:
+      What You Should Know Before Trying It
+    </h1>
+    <p class="subtitle">
+      A straightforward overview of the program, its approach,
+      what you may find inside, and a few important things to consider.
+    </p>
   </div>
+</header>
 
-</div>
+<main>
+  <div class="container">
+
+    <section class="card">
+      <h2>Why Are People Looking for Alternatives?</h2>
+      <p>
+        Rising household energy costs have encouraged many people to look
+        for practical ways to understand and manage their electricity usage.
+      </p>
+      <p>
+        Energy Revolution System is presented as a program designed to
+        introduce an alternative approach to thinking about household
+        energy consumption.
+      </p>
+      <div class="highlight">
+        <strong>Important:</strong>
+        The information on this page is intended to help you understand
+        the offer. Results, savings and experiences can vary from person
+        to person and depend on individual circumstances.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What Is Energy Revolution System?</h2>
+      <p>
+        Energy Revolution System is an information-based program focused
+        on an alternative approach to household energy and electricity use.
+      </p>
+      <p>
+        Rather than simply presenting another generic list of ways to
+        reduce consumption, the program introduces its own methodology
+        and explains how the system is intended to be used.
+      </p>
+      <p>
+        The official presentation provides the complete explanation,
+        materials and instructions.
+      </p>
+    </section>
+
+    <!-- Seção de Benefícios e Imagem Neon Inserida -->
+    <section class="image-card">
+      <h2>System Installed Overview & Benefits</h2>
+      <p style="color: #94a3b8; margin-bottom: 20px;">
+        Explore the core pillars and estimated framework advantages featured in the program breakdown:
+      </p>
+      
+      <!-- Insira o link direto da sua imagem no atributo src abaixo -->
+      <img src="https://i.imgur.com/SEU_LINK_DA_IMAGEM.jpg" alt="Energy Revolution System Core Benefits Infographic">
+      
+      <p class="small" style="margin-top: 15px;">
+        Visual summary detailing massive savings, eco-friendly power, portable setup, and minimal maintenance concepts.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What You Can Learn About</h2>
+      <p>
+        Depending on the version of the program currently offered,
+        the material may cover areas such as:
+      </p>
+      <div class="check">✓ Understanding household electricity usage</div>
+      <div class="check">✓ Alternative approaches to energy management</div>
+      <div class="check">✓ Practical concepts presented by the program</div>
+      <div class="check">✓ How the proposed system is intended to be implemented</div>
+      <div class="check">✓ Considerations for applying the method at home</div>
+
+      <div class="mid-cta">
+        <a
+          class="button"
+          href="https://743e9d5d-8pljv04pmqpdudv6r.hop.clickbank.net/"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+        >
+          Watch the Official Presentation Here
+        </a>
+      </div>
+
+      <p class="small" style="margin-top: 15px; text-align: center;">
+        Always review the current official presentation for the exact
+        contents, terms and availability.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What Makes This Worth Looking At?</h2>
+      <p>
+        One reason people may investigate a program like this is the
+        possibility of learning a different way to approach household
+        energy consumption.
+      </p>
+      <p>
+        However, it is important to distinguish between learning a method
+        and receiving a guaranteed financial result.
+      </p>
+      <p>
+        There is no guarantee that every household will achieve the same
+        outcome.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Things to Consider Before You Buy</h2>
+      <h3>1. Your results may vary</h3>
+      <p>
+        Individual circumstances, home characteristics, electricity usage
+        and other factors can influence the outcome.
+      </p>
+      <h3>2. Check the current offer</h3>
+      <p>
+        Pricing, bonuses, guarantees and program contents can change.
+        The official sales page should be considered the current source
+        for those details.
+      </p>
+      <h3>3. Understand what you are purchasing</h3>
+      <p>
+        Take some time to review the official presentation before making
+        a purchase so you understand what the program includes.
+      </p>
+    </section>
+
+    <section class="cta-box">
+      <h2>Want to See the Official Presentation?</h2>
+      <p>
+        If you want to learn more about Energy Revolution System,
+        you can view the official presentation and decide for yourself
+        whether the program is relevant to your situation.
+      </p>
+      <a
+        class="button"
+        href="https://743e9d5d-8pljv04pmqpdudv6r.hop.clickbank.net/"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        View the Official Presentation
+      </a>
+      <p class="small">
+        This link may be an affiliate link. If you purchase through it,
+        we may receive a commission at no additional cost to you.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <h3>Is Energy Revolution System guaranteed to save everyone money?</h3>
+        <p>No specific financial result should be assumed. Individual results can vary depending on circumstances and implementation.</p>
+      </div>
+      <div class="faq">
+        <h3>Where can I see the complete details?</h3>
+        <p>The official presentation contains the current information about the program, its contents and purchasing terms.</p>
+      </div>
+      <div class="faq">
+        <h3>Should I buy it immediately?</h3>
+        <p>You should first review the official presentation and decide whether the program is appropriate for your own circumstances.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Final Thoughts</h2>
+      <p>
+        Energy Revolution System presents an alternative approach to
+        household energy management. The main question is whether the
+        method and information provided are relevant to your particular
+        situation.
+      </p>
+      <p>
+        The best next step is to review the official presentation,
+        understand the offer and make your own informed decision.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        <strong>Affiliate Disclosure:</strong>
+        This website may contain affiliate links. We may receive a commission
+        if you purchase through a link on this page, at no additional cost to you.
+      </p>
+      <p>
+        This page is an informational pre-sell page and is not the official
+        website of Energy Revolution System.
+      </p>
+      <p>
+        © 2026. All rights reserved.
+      </p>
+    </footer>
+
+  </div>
+</main>
 
 </body>
 </html>
